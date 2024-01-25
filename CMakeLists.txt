@@ -69,6 +69,7 @@ file(GLOB_RECURSE SOURCES_NAVA2_CORE_PLUGINS CONFIGURE_DEPENDS
 
 add_library(${PROJECT_NAME} ${SOURCES_NAVA2_CORE_PLUGINS} )
 target_link_libraries(${PROJECT_NAME} 
+    nvm-core
     absl::base 
     absl::flat_hash_map 
     absl::algorithm
